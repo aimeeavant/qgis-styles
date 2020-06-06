@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset=utf-8 />
+  <title>Play-Eat-Walk Local!</title>
+  <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css" />
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: #7E4A36;
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 400;
+      color: #201919;
+    }
+
+    section {
+      width: 80%;
+      margin: 10px auto;
+    }
+
+    h1 {
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 300;
+      font-size: 2.5em;
+      /* The em unit. 2.5x the current size */
+      letter-spacing: .04em;
+      text-transform: uppercase;
+    }
+
+    h2 {
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 700;
+      color:#4EAD66;
+      font-size: 1.25em;
+      letter-spacing: .04em;
+    }
+
+    p {
+      font-size: 1em;
+      line-height: 1.5em;
+    }
+
+    a {
+      color:#4EAD66;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    li {
+      margin: 10px 0
+    }
+
+    #map {
+      width: 100%;
+      margin: 0px auto;
+
+    }
+
+    .max-image-width {
+      width: 100%;
+    }
+
+
+    .linkbox {
+      margin: 3px 0 20px 0;
+      display: block;
+      font-weight: 300;
+    }
+
+    hr {
+      border: 0px;
+      border-bottom: 1px solid #3d3d3d;
+      padding-top: 20px;
+    }
+
+    /* Use float property to make two-column layout. */
+
+    .first-column {
+      float: left;
+      width: 48%;
+      padding-right: 20px;
+    }
+
+    .column {
+      float: left;
+      width: 48%;
+    }
+
+    /* Clear floats after the columns */
+
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    /* When browser is 800px wide or less */
+
+    @media screen and (max-width: 800px) {
+      .first-column,
+      .column {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Add map to top of page and make it stretch to fill browser window. -->
+  <img class="max-image-width" src="LagunaLakePark-v1200.png">
+
+  <!-- Create a two column layout for map information. -->
+  <section>
+    <a href='LagunaLakePark-v8000.png' class="linkbox">Full screen version</a>
+
+    <h1>Play-Eat-Walk Local!</h1>
+    <h2>Authored by: Aimee Armour-Avant</h2>
+
+    <div class="row">
+      
+      <!-- First column, the left half -->
+      <div class="first-column">
+        <p>The Institute of Environmental Recreation has launched a campaign to promote an active lifestyle in city neighborhoods by showcasing maps that hightlight trails and amenities in city's neighborhoods that are within walking distance (one mile) of public parks, forests, and beaches. </p>
+        <p>This map shows a one-mile mile buffer around the public park Laguna Lake in San Luis Obispo County, California and selected food-based ammenities include including cafes, restaurants, ice cream, fast food, and bars.</p>
+      </div>
+      
+      <!-- Second column, the right half -->
+      <div class="column">
+        <img class="max-image-width" src="lagunalake.jpg">
+        <p class="linkbox">Laguna Lake Park features several unique recreation areas and opportunities. Laguna Lake is a migratory stop and home to a variety of waterfowl. </p>
+        <img class="max-image-width" src="geese.jpg">
+
+
+      </div>
+    </div>
+
+    <h3>Map details</h3>
+		<p>Create on QGIS 3.2 using OpenStreetMap data harvested from the QuickOSM plugin. &copy; 2020 Openstreet map contributors. Projection: NAD27 California Albers</p>
+
+    <p>University of Kentucky New Maps Plus, Spring 2020.
+    </p>
+    <hr>
+    <ul>
+      <li>Visit my Github account <a href="https://github.com/aimeeavant">Aimee Armour-Avant</a>
+      </li>
+      <li><a href="https://newmapsplus.github.io">New Maps Plus</a></li>
+    </ul>
+  </section>
+
+</body>
+</html>
